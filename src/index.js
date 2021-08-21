@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import {FavoriteContextProvider} from  './store/favorites-context';
 import { BrowserRouter } from 'react-router-dom';
 ReactDOM.render(
-  <BrowserRouter>
+  <FavoriteContextProvider>
+    <BrowserRouter>
     <App />
-    </BrowserRouter>,
+    </BrowserRouter>
+  </FavoriteContextProvider>,
   document.getElementById('root')
 );
 

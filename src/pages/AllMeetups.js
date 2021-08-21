@@ -30,7 +30,7 @@ function AllMeetups() {
   }
     return <section>
         <h1>All meet ups</h1>
-        <MeetupList meetup={loadedMeetups}/>
+        <MeetupList meetups={loadedMeetups}/>
     </section>;
 }
 export default AllMeetups;
